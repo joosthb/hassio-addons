@@ -8,5 +8,5 @@
 - Added dbus access
 
 
-## [1.0.0]
+## [1.0]
 - Initial version
