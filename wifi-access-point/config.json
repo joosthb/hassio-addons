@@ -1,6 +1,6 @@
 {
   "name": "WiFi Access Point",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "slug": "wifi-access-point",
   "description": "Create a WiFi access point on hass.io",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -18,7 +18,8 @@
     "channel": "6",
     "address": "192.168.99.1",
     "netmask": "255.255.255.0",
-    "broadcast": "192.168.99.254"
+    "broadcast": "192.168.99.254",
+    "domain": "DOMAIN"
 
   },
   "schema": {
@@ -27,6 +28,7 @@
     "channel": "int",
     "address": "str",
     "netmask": "str",
-    "broadcast": "str"
+    "broadcast": "str",
+    "domain": "str"
   }
 } 

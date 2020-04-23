@@ -10,7 +10,6 @@ ENV LANG C.UTF-8
 RUN apk add --no-cache bash jq iw hostapd networkmanager net-tools dnsmasq
 
 COPY hostapd.conf /
-COPY interfaces /etc/network/interfaces
 COPY dnsmasq.conf /etc/dnsmasq.conf
 COPY run.sh /
 RUN chmod a+x /run.sh
