@@ -1,0 +1,23 @@
+{
+  "name": "GPS",
+  "version": "0.1.0",
+  "slug": "gps",
+  "description": "Runs a serial/usb GPS module based ntp daemon in Home Assistant",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "url": "https://github.com/joosthb/hassio-addons",
+  "startup": "system",
+  "boot": "auto",
+  "ports": {
+    "123/udp": 123
+  },
+  "ports_description": {
+    "123/udp": "GPS based NTP daemon for hassio core."
+  },
+  "host_network": true,
+  "host_dbus": true,
+  "devices": ["/dev/ttyACM0:/dev/ttyACM0:rwm"],
+  "options": {
+  },
+  "schema": {
+  }
+} 
