@@ -1,0 +1,29 @@
+{
+  "name": "Phone Home",
+  "version": "0.0.1",
+  "slug": "phone-home",
+  "description": "Digs a reverse SSH tunnel home 👆",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "url": "https://github.com/joosthb/hassio-addons",
+  "startup": "services",
+  "boot": "auto",
+  "map": [
+    "backup:ro"
+  ],
+  "options": {
+    "ssh_priv": "",
+    "target_path": "",
+    "ssh_user": "",
+    "ssh_host": "",
+    "ssh_port": "22",
+    "remote_port": "8123"
+  },
+  "schema": {
+    "ssh_priv": "str",
+    "target_path": "str",
+    "ssh_user": "str",
+    "ssh_host": "str",
+    "ssh_port": "str",
+    "remote_port": "str"
+  }
+} 

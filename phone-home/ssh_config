@@ -1,0 +1,3 @@
+Host home
+	IdentityFile /ssh_priv
+	StrictHostKeyChecking no
