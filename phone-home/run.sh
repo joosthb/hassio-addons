@@ -46,7 +46,7 @@ mkdir /root/.ssh
 echo -e "\tHostName $SSH_HOST" >> /ssh_config
 echo -e "\tUser $SSH_USER" >> /ssh_config
 echo -e "\tPort $SSH_PORT" >> /ssh_config
-echo -e "\tRemoteForward 8123 homeassistant:$REMOTE_PORT" >> /ssh_config
+echo -e "\tRemoteForward $REMOTE_PORT homeassistant:8123" >> /ssh_config
 	
 
 echo "Setting up SSH tunnel..."
