@@ -49,14 +49,14 @@ echo -e "\tPort $SSH_PORT" >> /ssh_config
 echo -e "\tRemoteForward $REMOTE_PORT homeassistant:8123" >> /ssh_config
 	
 
-echo "Setting up SSH tunnel..."
-ssh -N -f -F /ssh_config home
+echo "Setting up auto reconnect SSH tunnel..."
+autossh -M 0 -f -N -F /ssh_config home
 
 while true
 do
 echo "Starting rsync backup to $SSH_HOST"
 rsync -az -e "ssh -p $SSH_PORT -i /ssh_priv -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" /backup/ $SSH_USER@$SSH_HOST:$TARGET_PATH
 echo "Finished rsync backup to $SSH_HOST"
-# sleep 24h
-sleep 86400
+# sleep 1h
+sleep 3600
 done
