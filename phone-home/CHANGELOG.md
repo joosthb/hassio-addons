@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.3]
+### Fixed
+- Changed ssh private key input param to b64
+
 ## [1.0.2]
 ### Fixed
 - Added autossh instead off ssh to provide auto-reconnect.
