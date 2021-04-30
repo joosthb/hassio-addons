@@ -1,6 +1,6 @@
 {
   "name": "Phone Home",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "slug": "phone-home",
   "description": "Digs a reverse SSH tunnel home 👆",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],

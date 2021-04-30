@@ -38,7 +38,7 @@ fi
 
 # Setup ssh access
 echo "Initializing..."
-echo "$SSH_PRIV" | base64 -d -o /ssh_priv
+echo "$SSH_PRIV" | base64 -d > /ssh_priv
 chmod 600 /ssh_priv
 
 mkdir /root/.ssh

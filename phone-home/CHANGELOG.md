@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.4]
+### Fixed
+- flags changed for base64
+
 ## [1.0.3]
 ### Fixed
 - Changed ssh private key input param to b64
