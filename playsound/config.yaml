@@ -1,0 +1,25 @@
+---
+version: 0.0.1
+slug: playsound
+name: playsound
+description: Module to play an audio file on a local audio interface.
+url: https://github.com/joosthb/hassio-addons
+arch:
+  - amd64
+  - i386
+  - armv7
+  - aarch64
+audio: true
+discovery:
+  - playsound
+image: homeassistant/{arch}-addon-playsound
+ingress: true
+init: false
+map:
+  - share:ro
+  - media:ro
+options: {}
+panel_icon: mdi:volume-high
+schema: false
+stage: stable
+startup: services
