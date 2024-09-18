@@ -9,4 +9,3 @@ To use this repository with your own Hass.io installation please follow [the off
 ```txt
 https://github.com/joosthb/hassio-addons
 ```
-
