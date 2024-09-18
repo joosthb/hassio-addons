@@ -16,7 +16,7 @@ RUN \
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-RUN pip install Flask
+RUN pip3 install Flask
 
 COPY app.py /
 
