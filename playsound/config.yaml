@@ -12,7 +12,6 @@ arch:
 audio: true
 discovery:
   - playsound
-image: homeassistant/{arch}-addon-playsound
 ingress: true
 init: false
 map:
